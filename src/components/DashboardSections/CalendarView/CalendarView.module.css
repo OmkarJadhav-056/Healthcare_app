@@ -1,0 +1,230 @@
+.main {
+    height: auto;
+    width: 42%;
+    background-color: rgba(219, 233, 251, 0.264);
+    padding: 2.6rem;
+    padding-top: 5rem;
+    padding-bottom: 0;
+    border-radius: 0 2.2rem 2.2rem 0;
+}
+
+.box .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.box .header p {
+    font-size: 0.75em;
+}
+
+.box .header #icon {
+    font-size: 0.75rem;
+    display: flex;
+    gap: 1rem;
+    color: rgb(47, 47, 184);
+}
+
+/* Calender box */
+.container {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem;
+}
+
+.dayColumn {
+    flex: 1;
+    text-align: center;
+    padding: 0.2rem;
+}
+
+.dayHeader {
+    margin-bottom: 0.5rem;
+}
+
+.dayName {
+    font-size: 0.6em;
+    font-weight: 600;
+    color: #2f3664;
+}
+
+.dayDate {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.2rem;
+    color: #2f3664;
+}
+
+.times {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.timeSlot {
+    font-size: 0.7em;
+    color: #282e55;
+    border-radius: 0.25rem;
+    padding: 0.2rem 0.5rem;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.highlighted {
+    padding: 0.2rem 0.5rem;
+    background-color: rgba(47, 47, 184, 0.453);
+    color: white;
+}
+
+.empty {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.highlightColumn {
+    background-color: rgba(124, 139, 255, 0.1);
+    border-radius: 0.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+/* Appointment box */
+.appointment {
+    height: 4.4rem;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.appointment .left {
+    height: 100%;
+    padding: 0.7rem 0.9rem;
+    width: auto;
+    border-radius: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left .title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.76em;
+    gap: 1rem;
+    font-weight: 500;
+}
+
+.left .title img {
+    height: 1rem;
+}
+
+#data p {
+    font-size: 0.65em;
+}
+
+.bluebox {
+    color: white;
+    background-color: rgb(47, 47, 184);
+}
+
+.graybox {
+    background-color: rgb(221, 227, 234);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main {
+        flex-grow: 1;
+        margin-top: 2rem;
+        padding: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        border-radius: 0 2.2rem 2.2rem 2.2rem;
+    }
+
+    .container {
+        margin-top: 1rem;
+    }
+
+    .dayHeader {
+        margin-bottom: 0.7rem;
+    }
+
+    .dayColumn {
+        padding: 1rem 0.2rem;
+    }
+
+    .appointment {
+        height: 5rem;
+        gap: 3rem;
+    }
+
+    .appointment .left {
+        padding: 0.8rem 1.2rem;
+    }
+
+    .bluebox {
+        flex-grow: 1;
+    }
+
+    .graybox {
+        flex-grow: 3;
+    }
+}
+
+@media (max-width: 640px) {
+    .main {
+        flex-grow: 1;
+        margin-top: 2rem;
+        padding: 2.5rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        border-radius: 0 2.2rem 2.2rem 2.2rem;
+    }
+
+    .container {
+        margin-top: 1rem;
+    }
+
+    .dayHeader {
+        margin-bottom: 0.7rem;
+    }
+
+    .dayColumn {
+        padding: 1rem 0rem;
+    }
+
+    .appointment {
+        height: 5rem;
+        gap: 2rem;
+    }
+
+    .appointment .left {
+        padding: 0.6rem 1rem;
+    }
+}
+
+@media (max-width: 535px) {
+    .main {
+        margin-top: 2rem;
+        padding: 1.5rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        border-radius: 0 0 2.2rem 2.2rem;
+    }
+
+    .container {
+        margin-top: 1rem;
+    }
+
+    .appointment {
+        height: 5rem;
+        gap: 1.5rem;
+    }
+}

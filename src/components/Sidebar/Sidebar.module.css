@@ -1,0 +1,95 @@
+.main {
+    height: auto;
+    width: 15%;
+    min-width: 8rem;
+    background-color: rgba(219, 233, 251, 0.264);
+    border-radius: 2.2rem 0rem 0rem 2.2rem;
+    display: inline-block;
+    padding-top: 5rem;
+}
+
+.main .top {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-left: 3rem;
+}
+
+.top h5 {
+    font-weight: 400;
+    color: rgb(138, 136, 136);
+}
+
+.top p {
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.315);
+}
+
+.top .menu span {
+    font-size: 1.1em;
+    margin-right: 0.7rem;
+}
+
+.top #active {
+    font-size: 0.9em;
+    color: rgb(72, 68, 68);
+}
+
+.top #center {
+    margin-top: 2rem;
+}
+
+.top #bottom {
+    margin-top: 4.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main {
+        flex-grow: 1;
+    }
+
+    .main .top {
+        padding-left: 2rem;
+    }
+
+    .top p {
+        font-size: 0.7em;
+        color: rgba(0, 0, 0, 0.315);
+    }
+
+    .top .menu span {
+        font-size: 0.9em;
+        margin-right: 0.7rem;
+    }
+
+    .top #active {
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 640px) {
+    .main .top {
+        padding-left: 1.5rem;
+    }
+
+    .top p {
+        font-size: 0.65em;
+    }
+
+    .top .menu span {
+        font-size: 0.8em;
+        margin-right: 0.7rem;
+    }
+
+    .top #active {
+        font-size: 0.75em;
+    }
+}
+
+@media (max-width: 535px) {
+    .main {
+        display: none;
+    }
+}
